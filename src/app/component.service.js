@@ -1,4 +1,4 @@
-class ComponentService {
+export class ComponentService {
 	constructor() {
 		this.numberOneInput = document.getElementById("numberOne");
 		this.numberTwoInput = document.getElementById("numberTwo");
@@ -16,5 +16,10 @@ class ComponentService {
 
 	onClick(callback) {
 		this.addValuesButton.addEventListener("click", callback);
+	}
+
+	clearInputsArea() {
+		this.numberOneInput.value = "";
+		this.numberTwoInput.value = "";
 	}
 }
