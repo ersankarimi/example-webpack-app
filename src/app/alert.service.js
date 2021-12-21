@@ -1,8 +1,10 @@
 import { inputAreValid } from "./utils/input-are-valid";
+import "./../alert.scss";
 
 export class AlertService {
 	constructor() {
 		this.errorBox = document.getElementById("error");
+		this.errorBox.classList.add("danger");
 	}
 
 	handleAdditionError(inputs, numbers) {
