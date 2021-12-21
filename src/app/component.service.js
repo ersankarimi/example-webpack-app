@@ -1,11 +1,13 @@
-import "./../input-value.css";
+import "./../input-value.scss";
 
 export class ComponentService {
 	constructor() {
 		this.numberOneInput = document.getElementById("numberOne");
-		this.numberOneInput.classList.add("input-value");
+		this.numberOneInput.classList.add("primary");
+
 		this.numberTwoInput = document.getElementById("numberTwo");
-		this.numberTwoInput.classList.add("input-value");
+		this.numberTwoInput.classList.add("primary");
+
 		this.addValuesButton = document.getElementById("addValues");
 		this.resultDiv = document.getElementById("result");
 	}
