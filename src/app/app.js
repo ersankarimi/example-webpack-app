@@ -16,6 +16,7 @@ export const run = (alertService, componentService) => {
 		} else {
 			componentService.setResult("");
 			alertService.handleAdditionError(inputs, parseInputs);
+			componentService.clearInputsArea();
 		}
 	});
 };
