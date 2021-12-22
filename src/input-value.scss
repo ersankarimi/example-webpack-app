@@ -1,4 +1,10 @@
-$primary : red;
+$primary : teal;
+$success : pink;
+
 .primary {
     background-color: $primary;
+}
+
+.success {
+    background-color: $success;
 }
