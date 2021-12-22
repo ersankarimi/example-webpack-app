@@ -14,6 +14,14 @@ module.exports = {
 				test: /\.scss$/i,
 				use: ["style-loader", "css-loader", "sass-loader"],
 			},
+			{
+				test: /\.html$/i,
+				use: ["html-loader"],
+			},
+			{
+				test: /\.(png|svg|jpg|gif)$/i,
+				type: "asset/resource",
+			},
 		],
 	},
 };
