@@ -10,6 +10,9 @@ export class ComponentService {
 
 		this.addValuesButton = document.getElementById("addValues");
 		this.resultDiv = document.getElementById("result");
+
+		this.cardBody = document.querySelector(".card-body");
+		this.cardBody.classList.add("success");
 	}
 
 	getInputs() {
