@@ -8,5 +8,7 @@ module.exports = merge(commonConfig, {
 	output: {
 		filename: "app.[contenthash].js",
 		path: path.resolve(__dirname, "dist"),
+		assetModuleFilename: "assets/[name].[hash][ext]",
+		clean: true,
 	},
 });
