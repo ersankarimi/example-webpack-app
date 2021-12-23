@@ -6,7 +6,7 @@ module.exports = merge(commonConfig, {
 	mode: "development",
 	devtool: "inline-source-map",
 	output: {
-		filename: "app.js",
+		filename: "[name].js",
 		path: path.resolve(__dirname, "dist"),
 	},
 });
