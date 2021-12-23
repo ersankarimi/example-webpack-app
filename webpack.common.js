@@ -1,7 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-	entry: "./src/index.js",
+	entry: {
+		app: "./src/index.js",
+		vendor: "./src/vendor.js",
+	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: "Webpack App Demo",
